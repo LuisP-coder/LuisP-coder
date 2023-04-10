@@ -95,18 +95,3 @@ p{
       height: 100%;
     }
 }
-
-@media (orientation:portrait) and (min-height: 1080px){
-    .main-footer.sticky-bottom {
-      position: absolute; 
-      left: 0; 
-      right: 0; 
-      bottom: 0;
-    }
-}
-
-@media (orientation:portrait) and (min-height: 1080px){
-    .contact-background {
-      height: 100%;
-    }
-}
