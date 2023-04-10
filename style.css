@@ -6,10 +6,10 @@ body{
 header{
     background-color: #F5FFFA;
 }
+
 main {
    background-color: #F5FFFA;
 }
-
 
 a {
     display: block;
@@ -18,7 +18,7 @@ a {
     color: #343434;
 }
 
- a:after {
+a:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -30,9 +30,9 @@ a {
     color: #343434;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-  }
+ }
 
- a:hover:after {
+a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -55,10 +55,6 @@ a {
     color: #343434;
 }
 
-section {
-    padding: 100px 0;
-}
-
 #introduction{
     text-align: center;
 }
@@ -68,6 +64,7 @@ section {
     border-radius: 75%;
     width: 510px;
 }
+
 h2, h3, h5, p{
     color: #343434;
 }
@@ -84,4 +81,32 @@ p{
 
 .history  {
     align-items: center;
+}
+
+@media (orientation:portrait) and (min-height: 1080px){
+    body, html{
+      margin:0;
+      height:100%;
+    }
+}
+
+@media (orientation:portrait) and (min-height: 1080px){
+    .container-fluid {
+      height: 100%;
+    }
+}
+
+@media (orientation:portrait) and (min-height: 1080px){
+    .main-footer.sticky-bottom {
+      position: absolute; 
+      left: 0; 
+      right: 0; 
+      bottom: 0;
+    }
+}
+
+@media (orientation:portrait) and (min-height: 1080px){
+    .contact-background {
+      height: 100%;
+    }
 }
