@@ -1,21 +1,23 @@
 body{
-    overflow: hidden;
     font-family: 'Rubik', sans-serif;
     background-color: #F5FFFA;
+    width:100%;
+    min-width:1000px;
+    height:auto;
 }
 
 header{
     background-color: #F5FFFA;
 }
 
-a {
-    display: block;
+.links{
     position: relative;
-    padding: 0.2em 0;
+    font-size: 30px;
+    letter-spacing: normal;
     color: #343434;
 }
 
-a:after {
+.links:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -29,23 +31,21 @@ a:after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover:after {
+.links:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.navbar {
+.navbar-header > h3{
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-.navbar-name{
     outline: 0;
     text-decoration: none;
     font-size: 24px;
     color: #343434;
 }
+
 
 .navbar-nav .nav-link:hover{
     color: #343434;
@@ -69,25 +69,19 @@ p{
     font-size: 20px;
 }
 
-.links {
-    display: inline-flex;
-    font-size: 30px;
-    letter-spacing: normal;
+.apps{
+    height: 500px;
+    width: 600px;    
 }
 
-.history  {
-    align-items: center;
+figure{
+    margin-top: 30px;
 }
 
-@media (orientation:portrait) and (min-height: 1080px){
-    body, html{
-      margin:0;
-      height:100%;
-    }
+figcaption{
+    font-size: large;
 }
 
-@media (orientation:portrait) and (min-height: 1080px){
-    .container-fluid {
-      height: 100%;
-    }
+#portfolio{
+    margin-top: 30px;
 }
