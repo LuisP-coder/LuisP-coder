@@ -74,6 +74,11 @@ p{
     width: 600px;    
 }
 
+#showcase{
+    text-align: center;
+    margin-top: 10px;
+}
+
 figure{
     margin-top: 30px;
 }
