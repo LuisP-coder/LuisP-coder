@@ -90,3 +90,11 @@ figcaption{
 #portfolio{
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .apps{
+      height: 500px;
+      width: 400px;
+    }
+}
